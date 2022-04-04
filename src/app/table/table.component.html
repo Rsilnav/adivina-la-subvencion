@@ -1,7 +1,5 @@
 <div cdkDropListGroup>
   <div class="example-container">
-    <h2>To do</h2>
-
     <div
       cdkDropList
       [cdkDropListData]="todo"
@@ -12,67 +10,67 @@
   </div>
 
   <div class="example-container">
-    <h2>Subvencion 1</h2>
+    <h2 [ngClass]="isCorrect(0) ? 'correct' : 'incorrect'">{{ title1 }}</h2>
 
     <div
       cdkDropList
       cdkDropListOrientation="horizontal"
-      [cdkDropListData]="sub1"
+      [cdkDropListData]="subs[0]"
       class="example-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of sub1" cdkDrag>{{item}}</div>
+      <div class="example-box" *ngFor="let item of subs[0]" cdkDrag>{{item}}</div>
     </div>
   </div>
 
   <div class="example-container">
-    <h2>Subvencion 2</h2>
+    <h2 [ngClass]="isCorrect(1) ? 'correct' : 'incorrect'">{{ title2 }}</h2>
 
     <div
       cdkDropList
       cdkDropListOrientation="horizontal"
-      [cdkDropListData]="sub2"
+      [cdkDropListData]="subs[1]"
       class="example-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of sub2" cdkDrag>{{item}}</div>
+      <div class="example-box" *ngFor="let item of subs[1]" cdkDrag>{{item}}</div>
     </div>
   </div>
 
   <div class="example-container">
-    <h2>Subvencion 3</h2>
+    <h2 [ngClass]="isCorrect(2) ? 'correct' : 'incorrect'">{{ title3 }}</h2>
 
     <div
       cdkDropList
       cdkDropListOrientation="horizontal"
-      [cdkDropListData]="sub3"
+      [cdkDropListData]="subs[2]"
       class="example-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of sub3" cdkDrag>{{item}}</div>
+      <div class="example-box" *ngFor="let item of subs[2]" cdkDrag>{{item}}</div>
     </div>
   </div>
 
   <div class="example-container">
-    <h2>Subvencion 4</h2>
+    <h2 [ngClass]="isCorrect(3) ? 'correct' : 'incorrect'">{{ title4 }}</h2>
 
     <div
       cdkDropList
       cdkDropListOrientation="horizontal"
-      [cdkDropListData]="sub4"
+      [cdkDropListData]="subs[3]"
       class="example-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of sub4" cdkDrag>{{item}}</div>
+      <div class="example-box" *ngFor="let item of subs[3]" cdkDrag>{{item}}</div>
     </div>
   </div>
 
   <div class="example-container">
-    <h2>Subvencion 5</h2>
+    <h2 [ngClass]="isCorrect(4) ? 'correct' : 'incorrect'">{{ title5 }}</h2>
 
     <div
       cdkDropList
       cdkDropListOrientation="horizontal"
-      [cdkDropListData]="sub5"
+      [cdkDropListData]="subs[4]"
       class="example-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of sub5" cdkDrag>{{item}}</div>
+      <div class="example-box" *ngFor="let item of subs[4]" cdkDrag>{{item}}</div>
     </div>
   </div>
 </div>

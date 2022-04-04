@@ -1,5 +1,6 @@
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NgModule } from '@angular/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { TableComponent } from './table/table.component';
     BrowserModule,
     BrowserAnimationsModule,
     DragDropModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
